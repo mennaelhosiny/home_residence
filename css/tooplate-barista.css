@@ -653,6 +653,8 @@ strong {
   max-height: 450px;
   cursor: pointer;
   direction: rtl;
+  max-width: 270px;
+  margin: auto;
 }
 
 .team-block-wrap:hover .team-block-image {
@@ -759,7 +761,7 @@ strong {
 }
 
 .reviews-block {
-  background-color: var(--section-bg-color);
+  background-color: #b7875259;
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
@@ -770,15 +772,23 @@ strong {
 }
 
 .reviews-block-image-wrap {
-  background-image: url('../images/12.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:50%;
   background-position: center;
   padding: 30px;
 }
+ .wrap-1{
+  background-image: url('../images/Artboard\ 2\ copy.png');
+}
+.wrap-2{
+  background-image: url('../images/Artboard\ 2\ \(1\).png');
 
+}
+.wrap-3{
+  background-image: url('../images/Artboard\ 1\ \(2\).png');
+
+}
 .reviews-block-image {
-  background-color: #fff;
   border-radius: var(--border-radius-large);
   width: 65px;
   height: 65px;
@@ -793,7 +803,7 @@ strong {
 .reviews-block-info p {
   font-size: var(--btn-font-size);
   font-style: italic;
-  color: rgba(255, 255, 255, 0.75);
+  color: #483524;
 }
 
 .reviews-group i {
@@ -905,6 +915,68 @@ strong {
   margin-bottom: 10px;
 }
 
+/*-------------------------
+service
+----------------------------------*/
+
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.slider-container {
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+  width: calc(200px * 6 + 50px); /* حساب عرض الكاروسيل */
+  animation: scroll 10s linear infinite;
+}
+
+.slide {
+  min-width: 200px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.slide img {
+  width: 90px;
+  height: 70px;
+}
+
+/* رسوم متحركة لتمرير الكاروسيل */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    min-width: 150px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    min-width: 100px;
+  }
+}
 
 /*---------------------------------------
   CUSTOM FORM               
@@ -978,6 +1050,7 @@ strong {
   background-color: var(--primary-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  direction: rtl;
 }
 
 .site-footer strong {
@@ -1089,7 +1162,6 @@ strong {
   }
 
   .hero-section {
-    padding-top: 148px;
     padding-bottom: 100px;
   }
 
@@ -1207,6 +1279,15 @@ strong {
   .timeline-container-left::before,
   .timeline-container-right::before {
     top: 13px;
+  }
+
+  
+  .boxx{
+    margin-top: 130px;
+  }
+  .slide img{
+    width: 40px;
+    height: 30px;
   }
 }
 

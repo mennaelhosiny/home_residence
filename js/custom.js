@@ -43,3 +43,16 @@
   })(window.jQuery);
 
 
+/*---------------------
+service
+--------------------*/
+
+
+const slider = document.getElementById('slider');
+slider.addEventListener('mouseover', () => {
+    slider.style.animationPlayState = 'paused';
+});
+
+slider.addEventListener('mouseout', () => {
+    slider.style.animationPlayState = 'running';
+});
