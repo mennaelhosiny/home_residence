@@ -757,7 +757,7 @@ strong {
   REVIEWS              
 -----------------------------------------*/
 .reviews-section {
-  background-color: #7c5c52;
+  background-color: #483524;
 }
 
 .reviews-block {
@@ -919,12 +919,12 @@ strong {
 service
 ----------------------------------*/
 
-
 .service {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  padding: 20px;
 }
 
 .slider-container {
@@ -937,7 +937,7 @@ service
 .slider {
   display: flex;
   gap: 10px;
-  width: calc(200px * 6 + 50px); /* حساب عرض الكاروسيل */
+  width: calc(200px * 6 + 50px); /* Adjust the width based on the number of slides */
   animation: scroll 10s linear infinite;
 }
 
@@ -948,14 +948,21 @@ service
   line-height: 150px;
   border-radius: 10px;
   font-size: 1.2rem;
+  background-color: #b7875259;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide img {
-  width: 90px;
-  height: 70px;
+  width: 70px;
+  height: 60px;
+  margin-bottom: 10px;
 }
-
-/* رسوم متحركة لتمرير الكاروسيل */
+.slide h6{
+  color: #483524;
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -970,14 +977,12 @@ service
     min-width: 150px;
     height: 120px;
   }
-}
 
-@media (max-width: 480px) {
-  .slide {
-    min-width: 100px;
+  .slide img {
+    width: 50px;
+    height: 40px;
   }
 }
-
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
