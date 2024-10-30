@@ -110,11 +110,17 @@
 
                             <div class="col-lg-6 col-12">
                                 <div class="ratio ratio-1x1">
-                                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                                  
+                                    <video width="600" autoplay muted playsinline controls loop class="custom-video">
                                         <source src="images/video.mp4" type="video/mp4">
-
                                         Your browser does not support the video tag.
                                     </video>
+                                    <script>
+                                        document.querySelector('video').addEventListener('error', function(event) {
+                                            console.log('Error loading video:', event);
+                                            alert('There was an error loading the video.');
+                                        });
+                                    </script>
 
                                     <div class="about-video-info d-flex flex-column">
                                         <h4 class="mt-auto">Home Residense</h4>
@@ -126,13 +132,13 @@
                             <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
                                 <em class="text-white">هوم ريزيدنس </em>
 
-                                <h4 class="text-white mb-3">شقق فندقية في المدينة المنورة</h4>
+                                <h4 class="text-white mb-3 mt-2">شقق فندقية في المدينة المنورة</h4>
 
-                                <p class="text-white">وجهتك المثالية لاقامة لا مثيل لها في المدينة المنورة</p>
-
-                                <p class="text-white">نحن نجمع بين الراحة والفخامة في مكان واحد ,وشققنا الفندقية مجهزة بكل وسائل الراحة والأمان  , لنضمن لك راحة واسترخاء لا مثيل لها اثناء اقامتك <a rel="nofollow" href="https://www.tooplate.com" target="_blank"></a>.</p>
-                                <p class="text-white">اختر هوم ريزيدنس  لتجربة اقامة لا تُـنـسـى في المدينة المنورة</p>
-                            
+                                <p class="text-white">تقدم لك إقامة مليئة بالراحة والدفء في شقق فندقية في المدينة المنورة، حيث تتعانق الأجواء الروحانية والهادئة معًا في  وحدات سكنية فاخرة.
+                                </p>
+                                 <p class="text-white">يقع موقعنا في حي الدويخلة، أحد أرقى الأحياء السكنية في المدينة المنورة. ستجد في شققنا الفاخرة كل ما يتجاوز توقعاتك، بداية من قربنا من الحرم النبوي الشريف والوجهات المختلفة،</p>
+                                  <p class="text-white">وصولًا إلى الاستمتاع بخدماتنا الكاملة، مثل تنوع المساحات، الغرف المكيفة ذات التصميم الحديث، مواقف السيارات، وغيرها، مما يجعلنا خيارك الأفضل على الإطلاق.
+                                </p>                            
 
                                 <a href="https://wa.me/966582141133" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">احجز الان</a>
                             </div>
@@ -276,84 +282,85 @@
                 <section class="barista-section section-padding section-bg" id="section-3">
                     <div class="container">
                         <div class="row justify-content-center">
-
-                            <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
+                
+                            <div class="col-lg-12 col-12 text-center mb-2 pb-lg-2">
                                 <em class="text-white">reviews</em>
-
                                 <h2 class="text-white">اراء العملاء</h2>
                             </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                
+                            <!-- First Review Card -->
+                            <div class="col-lg-3 col-md-6 col-6 mb-2">
                                 <div class="team-block-wrap">
                                     <div class="team-block-info d-flex flex-column">
-                                        <div class="d-flex mt-auto mb-3">
-                                            <h4 class="text-white mb-0" style="font-size: 23px;">Mahmoud Mostafa</h4>
-
+                                        <div class="d-flex mt-auto mb-1">
+                                            <h4 class="text-white mb-0" >Mahmoud Mostafa</h4>
                                         </div>
-
-                                        <p class="text-white mb-0" style="font-size: 16px;">مكان نظيف مرتب فخم جدا يناسب كل الناس اللي تبحث عن الفخامة و الهدوء و الجمال، كل الموجودين  ناس محترمين و متعاونين جدا.  </p>
+                                        <p class="text-white mb-0" >
+                                            مكان نظيف مرتب فخم جدا يناسب كل الناس اللي تبحث عن الفخامة و الهدوء و الجمال، 
+                                            .
+                                        </p>
                                     </div>
-
                                     <div class="team-block-image-wrap">
                                         <img src="images/0000.png" class="team-block-image img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                
+                            <!-- Second Review Card -->
+                            <div class="col-lg-3 col-md-6 col-6 mb-2">
                                 <div class="team-block-wrap">
                                     <div class="team-block-info d-flex flex-column">
-                                        <div class="d-flex mt-auto mb-3">
-                                            <h4 class="text-white mb-0" style="font-size: 23px;">نهى الحازمي</h4>
-
+                                        <div class="d-flex mt-auto mb-1">
+                                            <h4 class="text-white mb-0" >نهى الحازمي</h4>
                                         </div>
-
-                                        <p class="text-white mb-0 " style="font-size: 16px;">الفندق مريح وهادئ ونظيف شكرا للعاملين على تطويرها وعقبال اكثر من فرع .                                        </p>
+                                        <p class="text-white mb-0" >
+                                            الفندق مريح وهادئ ونظيف شكرا للعاملين على تطويرها وعقبال اكثر من فرع.
+                                        </p>
                                     </div>
-
                                     <div class="team-block-image-wrap">
                                         <img src="images/0000.png" class="team-block-image img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                
+                            <!-- Third Review Card -->
+                            <div class="col-lg-3 col-md-6 col-6 mb-2">
                                 <div class="team-block-wrap">
                                     <div class="team-block-info d-flex flex-column">
-                                        <div class="d-flex mt-auto mb-3">
-                                            <h4 class="text-white mb-0" style="font-size: 23px;">غالية محمد</h4>
-
+                                        <div class="d-flex mt-auto mb-1">
+                                            <h4 class="text-white mb-0" >غالية محمد</h4>
                                         </div>
-
-                                        <p class="text-white mb-0" style="font-size: 16px;">رائع جداً للسكن نظافه وخدمه ممتازه وراحة ، شكراً للموظفين أخلاقهم ممتازه ومتعاونين والعمال أيضاً أمينين ومتعاونين         </p>
+                                        <p class="text-white mb-0" >
+                                            رائع جداً للسكن نظافة وخدمة ممتازة وراحة، شكراً للموظفين أخلاقهم ممتازة 
+                                            ومتعاونين .
+                                        </p>
                                     </div>
-
                                     <div class="team-block-image-wrap">
                                         <img src="images/0000.png" class="team-block-image img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-3 col-md-6 col-12">
+                
+                            <!-- Fourth Review Card -->
+                            <div class="col-lg-3 col-md-6 col-6">
                                 <div class="team-block-wrap">
                                     <div class="team-block-info d-flex flex-column">
-                                        <div class="d-flex mt-auto mb-3">
-                                            <h4 class="text-white mb-0" style="font-size: 23px;">Mohammed ElKhatib</h4>
-
+                                        <div class="d-flex mt-auto mb-1">
+                                            <h4 class="text-white mb-0">Mohammed ElKhatib</h4>
                                         </div>
-
-                                        <p class="text-white mb-0" style="font-size: 16px;">شقق  نظيفة، أنصح بها بشدة للإقامات المتوسطة، والطويلة في المدينة المنورة. </p>
+                                        <p class="text-white mb-0">
+                                            شقق نظيفة، أنصح بها بشدة للإقامات المتوسطة والطويلة في المدينة المنورة.
+                                        </p>
                                     </div>
-
                                     <div class="team-block-image-wrap">
                                         <img src="images/0000.png" class="team-block-image img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
-
+                
                         </div>
                     </div>
-                </section>
+                </section>              
 
                 <section class="contact-section section-padding" id="section_5">
                     <div class="container">
@@ -379,11 +386,13 @@
 
                 <footer class="site-footer">
                     <div class="container">
-                        <div class="row g-5 align-items-start"> 
-                        
+                        <div class="row  align-items-start"> 
+                            <div class="col-lg-3 col-md-6 col-12 text-center mb-4 ">
+                                <img src="images/logo.webp" alt="logo" style="width: 140px; height: 100px;" class="navbar-brand-image img-fluid ">
+                            </div>
 
                             <div class="col-lg-3 col-md-6 col-12">
-                                <h5 class="text-white d-block mb-4">ستجدنا في</h5>
+                                <h5 class="text-white d-block mb-4 ">ستجدنا في</h5>
                 
                                 <p class="text-white d-flex align-items-center mb-3"> 
                                     <i class="bi-geo-alt me-2 mx-2"></i> 
@@ -393,7 +402,7 @@
                                     </a>
                                 </p>
                 
-                                <ul class="social-icon mt-4">
+                                <ul class="social-icon mt-4 text-center">
                                     <li class="social-icon-item">
                                         <a href="https://www.facebook.com/homeresidence11/" class="social-icon-link bi-facebook"></a>
                                     </li>
@@ -442,9 +451,7 @@
                 
                         
                 
-                            <div class="col-lg-3 col-md-6 col-12 text-center">
-                                <img src="images/logo.webp" alt="logo" style="width: 140px; height: 100px;" class="navbar-brand-image img-fluid">
-                            </div>
+                           
                 
                         </div>
                     </div>

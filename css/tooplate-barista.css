@@ -681,7 +681,7 @@ strong {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 30px;
+  padding: 4px;
 }
 
 .team-block-info .badge {
@@ -1170,7 +1170,6 @@ service
   }
 
   .hero-section {
-    padding-bottom: 100px;
   }
 
   .navbar-brand,
@@ -1291,11 +1290,20 @@ service
 
   
   .boxx{
-    margin-top: 130px;
+    margin-top: 60px;
+  }
+  .slider-container{
+    width: 100%;
   }
   .slide img{
     width: 40px;
     height: 30px;
+  }
+  .team-block-wrap h4{
+    font-size: 16px;
+  }
+  .team-block-wrap p{
+    font-size: 13px;
   }
 }
 
